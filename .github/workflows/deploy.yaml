@@ -49,3 +49,6 @@ jobs:
         with:
           publish_dir: ./build
           github_token: ${{ secrets.GH_TOKEN }}
+#      add cname
+      - name: Add CNAME
+        run: echo 'xcrescent.me' > ./CNAME
