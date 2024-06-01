@@ -31,7 +31,7 @@ class _AppState extends ConsumerState<App> with GlobalHelper {
     final locale = ref.watch(localePod);
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      title: 'Example App',
+      title: 'Utkarsh Singh - Portfolio',
       theme: Themes.theme,
       darkTheme: Themes.darkTheme,
       themeMode: currentTheme,
@@ -56,7 +56,8 @@ class _AppState extends ConsumerState<App> with GlobalHelper {
           final mediaquery = MediaQuery.of(context);
           child = MediaQuery(
             data: mediaquery.copyWith(
-              textScaler: TextScaler.linear(mediaquery.textScaleFactor.clamp(0, 1.5)),
+              textScaler:
+                  TextScaler.linear(mediaquery.textScaleFactor.clamp(0, 1.5)),
             ),
             child: child,
           );

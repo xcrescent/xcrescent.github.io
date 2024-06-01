@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 ///This class defines light theme and dark theme
 ///Here we used flex color scheme
@@ -12,7 +13,7 @@ class Themes {
         appBarOpacity: 0.95,
         swapColors: true,
         tabBarStyle: FlexTabBarStyle.forBackground,
-
+        fontFamily: GoogleFonts.aBeeZee().fontFamily,
         subThemesData: const FlexSubThemesData(
           blendOnLevel: 20,
           blendOnColors: false,
@@ -43,6 +44,7 @@ class Themes {
         appBarStyle: FlexAppBarStyle.background,
         appBarOpacity: 0.90,
         tabBarStyle: FlexTabBarStyle.forBackground,
+        fontFamily: GoogleFonts.aBeeZee().fontFamily,
         subThemesData: const FlexSubThemesData(
           blendOnLevel: 30,
           inputDecoratorRadius: 8,
