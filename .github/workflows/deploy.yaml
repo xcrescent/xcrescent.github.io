@@ -25,7 +25,7 @@ jobs:
 #        run: flutter gen-l10n
 
       - name: Build for Web
-        run: flutter build web --base-href "/portfolio_brl_trainees/"
+        run: flutter build web
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
