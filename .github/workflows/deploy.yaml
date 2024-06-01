@@ -28,7 +28,7 @@ jobs:
         run: flutter build web
           #      add cname
       - name: Add CNAME
-        run: echo 'xcrescent.me' > .build/web/CNAME
+        run: echo 'xcrescent.me' > ./build/web/CNAME
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
