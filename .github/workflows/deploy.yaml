@@ -21,6 +21,8 @@ jobs:
           cache: true
       - name: Install dependencies
         run: flutter pub get
+      - name: Localize
+        run: flutter gen-l10n
 
       - name: Build for Web
         run: flutter build web --base-href "/portfolio_brl_trainees/"
